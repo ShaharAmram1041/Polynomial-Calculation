@@ -16,7 +16,7 @@ int main() {
         printf("Enter \"POLYNOM, VAL\":\n");
         if(fgets(str, 512, stdin) == NULL) //input from user
             exit(1);
-//        str[strlen(str) - 1] = '\0';
+        str[strlen(str) - 1] = '\0';
         if (strcmp(str, "done") == 0) //if input is done, finish
             exit(0);
         numOfThreads = 0, j = 0, m = 0;
